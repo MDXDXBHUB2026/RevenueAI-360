@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "revenueai360"
+version = "0.1.0"
+description = "RevenueAI 360 - AI-Native Multi-Agent Customer Lifecycle Intelligence"
+authors = [{ name = "Principal AI Solutions Engineer" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.4.0",
+    "langgraph>=0.2.20",
+    "langchain-core>=0.3.0",
+    "sqlalchemy>=2.0.30",
+    "psycopg2-binary>=2.9.9",
+    "pgvector>=0.3.0",
+    "httpx>=0.27.0",
+    "openai>=1.40.0",
+    "python-multipart>=0.0.9",
+    "python-dotenv>=1.0.1",
+    "alembic>=1.13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.6.0",
+    "mypy>=1.11.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agents*", "connectors*", "tools*", "services*", "domain*", "shared*", "apps*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
