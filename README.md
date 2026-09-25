@@ -3,7 +3,7 @@
 > **AI-Native Multi-Agent Customer Lifecycle Intelligence**  
 > *Autonomous, continuous-context CRM & Lifecycle Orchestration across Email, WhatsApp, WebChat, and Internal Collaboration.*
 
-[![CI Pipeline](https://github.com/revenueai360/revenueai360/actions/workflows/ci.yml/badge.svg)](https://github.com/revenueai360/revenueai360/actions)
+[![CI Pipeline](https://github.com/MDXDXBHUB2026/RevenueAI-360/actions/workflows/ci.yml/badge.svg)](https://github.com/MDXDXBHUB2026/RevenueAI-360/actions)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![Next.js 15](https://img.shields.io/badge/Next.js-15-black.svg)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com)
@@ -120,8 +120,8 @@ graph TD
 
 ### Step 1: Clone and Configure Environment
 ```bash
-git clone https://github.com/revenueai360/revenueai360.git
-cd revenueai360
+git clone https://github.com/MDXDXBHUB2026/RevenueAI-360.git
+cd RevenueAI-360
 
 # Copy environment template
 cp .env.example .env
